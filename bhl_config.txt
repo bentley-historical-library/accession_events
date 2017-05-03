@@ -1,0 +1,11 @@
+AppConfig[:accession_events] = {
+       :agent_username => 'admin',                                                  
+       :agent_role => 'authorizer',
+       :accession_role => 'source',
+       :outcome => 'fail',
+       :event_types => [
+                        'agreement_sent',
+                        'agreement_signed',
+                        'custody_transfer'
+                       ]
+     }

@@ -24,7 +24,7 @@ module InitialEvents
         event = {
           "event_type" => type,
           "outcome" => cfg[:outcome],
-          "date" => {"date_type" => "single", "label" => "event", "begin" => time_now.strftime("%Y-%m-%d")},
+          "timestamp" => time_now,
           "linked_records" => [
                                {
                                  "role" => cfg[:accession_role],

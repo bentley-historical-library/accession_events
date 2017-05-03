@@ -8,11 +8,9 @@ config_defaults = {
   :accession_role => 'source',
   :outcome => 'fail',
   :event_types => [
-                   'acknowledgement_sent',
                    'agreement_sent',
                    'agreement_signed',
-                   'cataloged',
-                   'processed'
+                   'custody_transfer'
                   ]
 }
 

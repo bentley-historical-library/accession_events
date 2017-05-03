@@ -18,7 +18,7 @@ module InitialEvents
 
     def create_events_for(obj)
       cfg = AppConfig[:accession_events]
-      time_now = Time.now
+      time_now = Time.now.utc.iso8601
 
       cfg[:event_types].each do |type|
         event = {
